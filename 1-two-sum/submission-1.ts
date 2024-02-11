@@ -1,5 +1,5 @@
 function twoSum(nums: number[], target: number): number[] {
-    const numberMap = new Map();
+    let numberMap = new Map();
 
     for (let i = 0; i < nums.length; i++ ) {
         const difference = target - nums[i];
