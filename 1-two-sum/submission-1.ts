@@ -9,4 +9,4 @@ function twoSum(nums: number[], target: number): number[] {
         }
         numberMap.set(nums[i], i);
     }
-};
+}

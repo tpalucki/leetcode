@@ -30,4 +30,4 @@ function isPalindrome(s: string): boolean {
         j--
     }
     return true;
-};
+}

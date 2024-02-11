@@ -16,7 +16,5 @@ function maxDepth(root: TreeNode | null): number {
     if (root == null) {
         return 0;
     }
-    let leftDepth = maxDepth(root.left);
-    let rightDepth = maxDepth(root.right);
-    return 1 + (leftDepth > rightDepth ? leftDepth : rightDepth);
-};
+    return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+}
